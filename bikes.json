@@ -1,0 +1,64 @@
+{
+    "bikes": [
+        {
+            "name": "Montaña Pro",
+            "model": "Montaña",
+            "price": 10,
+            "image": "https://www.clootbike.com/images/products/bicicletas-de-montana-carbono-29-evolution-proedition-2.jpg" 
+        },
+        {
+            "name": "Carretera Speed",
+            "model": "Carretera",
+            "price": 15,
+            "image": "https://http2.mlstatic.com/D_NQ_NP_804807-MLA54272852883_032023-O.webp"
+        },
+        {
+            "name": "Urbana City",
+            "model": "Urbana",
+            "price": 4,
+            "image": "https://m.media-amazon.com/images/I/81MWPTWmKPL.jpg"
+        },
+        {
+            "name": "Montaña Adventure",
+            "model": "Montaña",
+            "price": 12,
+            "image": "https://www.lidl.es/media/product/0/0/5/3/8/4/7/zuendapp-bicicleta-de-montana-zoom--1.jpg"
+        },
+        {
+            "name": "Carretera Endurance",
+            "model": "Carretera",
+            "price": 18,
+            "image": "https://http2.mlstatic.com/D_NQ_NP_804807-MLA54272852883_032023-O.webp"
+        },
+        {
+            "name": "Urbana Commute",
+            "model": "Urbana",
+            "price": 5,
+            "image": "https://rutasenbici.net/wp-content/uploads/2020/04/Bicicleta-plegable-ciudad-moma.jpg"
+        },
+        {
+            "name": "Montaña Trail",
+            "model": "Montaña",
+            "price": 3.5,
+            "image": "https://s.libertaddigital.com/2022/06/09/bicicleta-de-montana-savadeck-svmb0013.jpg"
+        },
+        {
+            "name": "Carretera Racer",
+            "model": "Carretera",
+            "price": 14,
+            "image": "https://http2.mlstatic.com/D_NQ_NP_804807-MLA54272852883_032023-O.webp"
+        },
+        {
+            "name": "Urbana Leisure",
+            "model": "Urbana",
+            "price": 9,
+            "image": "https://contents.mediadecathlon.com/p2323524/k$6fc7ea7569fd6158701c7d0e4af7bef9/sq/8735615.jpg?format=auto&f=800x0"
+        },
+        {
+            "name": "Montaña Extreme",
+            "model": "Montaña",
+            "price": 13,
+            "image": "https://m.media-amazon.com/images/I/41-BmlRWNYL._AC_.jpg"
+        }
+    ]
+}
