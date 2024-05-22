@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alquiler de Bicicletas</title>
+    <link rel="stylesheet" href="styles.css">
+    <!-- Importación de Google Fonts y Font Awesome para iconos -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header>
+        <h1>Alquiler de Bicicletas</h1>
+        <nav>
+            <ul>
+                <li><a href="#home">Inicio</a></li>
+                <li><a href="#bikes">Bicicletas</a></li>
+                <li><a href="#location">Ubicación</a></li>
+                <li><a href="#reservations">Reservas</a></li>
+                <li><a href="#contact">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="home" class="hero">
+        <h2>Bienvenido a nuestro servicio de alquiler de bicicletas</h2>
+        <p>Explora la ciudad de una manera ecológica y divertida.</p>
+        <img src="https://img.europapress.es/fotoweb/fotonoticia_20180102084832_1200.jpg" alt="Explora la ciudad" class="hero-img">
+    </section>
+
+    <section id="bikes" class="bikes">
+        <h2>Nuestras Bicicletas</h2>
+        <div class="filters">
+            <div class="dropdown">
+                <button class="dropbtn">Filtrar por Modelo</button>
+                <div class="dropdown-content">
+                    <a href="#" onclick="filterBikes('all')">Todos los Modelos</a>
+                    <a href="#" onclick="filterBikes('Montaña')">Bicicleta de Montaña</a>
+                    <a href="#" onclick="filterBikes('Carretera')">Bicicleta de Carretera</a>
+                    <a href="#" onclick="filterBikes('Urbana')">Bicicleta Urbana</a>
+                </div>
+            </div>
+            <div class="dropdown">
+                <button class="dropbtn">Filtrar por Precio</button>
+                <div class="dropdown-content">
+                    <a href="#" onclick="filterByPrice(0, 5)">0 - 5 euros</a>
+                    <a href="#" onclick="filterByPrice(6, 10)">6 - 10 euros</a>
+                    <a href="#" onclick="filterByPrice(11, 20)">11+ euros</a>
+                </div>
+            </div>
+        </div>
+        <div class="bike-list" id="bikeList">
+            <!-- Las bicicletas se cargarán dinámicamente aquí -->
+        </div>
+    </section>
+
+    <section id="location" class="location">
+        <h2>Ubicación</h2>
+        <p>Encuéntranos en el centro de la ciudad, en la Plaza Mayor.</p>
+        <img src="https://www.campingaltomira.com/images/paginas_p/grandes/3699a68279944b38d0eb7ead484abca9.jpg" alt="Ubicación" class="location-img">
+    </section>
+
+    <section id="reservations" class="reservations">
+        <h2>Reservas</h2>
+        <p>Haz tu reserva en línea y asegura tu bicicleta para el día que prefieras.</p>
+        <form id="reservationForm">
+            <label for="reservationName">Nombre:</label>
+            <input type="text" id="reservationName" name="reservationName" required>
+            <label for="reservationDate">Fecha de Reserva:</label>
+            <input type="date" id="reservationDate" name="reservationDate" required>
+            <label for="reservationBike">Tipo de Bicicleta:</label>
+            <select id="reservationBike" name="reservationBike" required>
+                <option value="Montaña">Bicicleta de Montaña</option>
+                <option value="Carretera">Bicicleta de Carretera</option>
+                <option value="Urbana">Bicicleta Urbana</option>
+            </select>
+            <button type="submit">Reservar</button>
+        </form>
+    </section>
+
+    <section id="contact" class="contact">
+        <h2>Contacto</h2>
+        <form id="contactForm">
+            <label for="name">Nombre:</label>
+            <input type="text" id="name" name="name" required>
+            <label for="email">Correo Electrónico:</label>
+            <input type="email" id="email" name="email" required>
+            <label for="message">Mensaje:</label>
+            <textarea id="message" name="message" required></textarea>
+            <button type="submit">Enviar</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Alquiler de Bicicletas. Todos los derechos reservados.</p>
+    </footer>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
+
